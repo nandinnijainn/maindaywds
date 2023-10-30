@@ -1,0 +1,548 @@
+$icon: 400 1em/50px 'FontAwesome';
+
+.social{
+margin: 0 auto;
+padding-top: 100px;
+width: 400px;
+
+ul{
+  li{
+    background: #222;
+    border-radius: 50;
+    float: left;
+    height: 50px;
+    list-style: none;
+    margin: 0 10px;
+    width: 50px;
+
+    &:before{
+      font: $icon;
+    }
+
+    &:hover{
+      animation: transform .5s forwards, shadow 1s forwards;
+      -ms-animation: transform .5s forwards, shadow 1s forwards;
+      -moz-animation: transform .5s forwards, shadow 1s forwards;
+      -webkit-animation: transform .5s forwards, shadow 1s forwards;
+
+    }
+  }
+
+  .facebook{
+    &:hover{
+      background: #3b5998;
+    }
+
+    &:before{
+      color: #fff;
+      content:'\f09a';
+      display: block;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
+
+  .twitter{
+    &:hover{
+      background: #00aced;
+    }
+
+    &:before{
+      color: #fff;
+      content:'\f099';
+      display: block;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
+
+  .google{
+    &:hover{
+      background: #dd4b39;
+    }
+
+    &:before{
+      color: #fff;
+      content:'\f0d5';
+      display: block;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
+
+  .instagram{
+    &:hover{
+      background: #517fa4;
+    }
+
+    &:before{
+      color: #fff;
+      content:'\f16d';
+      display: block;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
+}
+}
+@import url('../../../maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+*{
+
+}
+a, a:hover {
+	text-decoration: none;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+	margin: 0;
+	padding: 5px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+    color: #FFF;
+	background-color: #000;
+	width: 40px;
+    height: 40px;
+    padding-top: 12px;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-o-border-radius: 20px;
+  transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+  	transform: rotate(-360deg);
+	-moz-transform: rotate(-360deg);
+	-webkit-transform: rotate(-360deg);
+	-o-transform: rotate(-360deg);
+}
+
+.socialbtns .fa:hover {
+	transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+	transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+}
+
+
+@-webkit-keyframes transform {
+from {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+}
+
+to {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+}
+}
+
+@keyframes transform {
+from {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+}
+
+to {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+}
+}
+
+@-webkit-keyframes shadow {
+from {
+  box-shadow: 0 0 0 rgba(0,0,0,.25);
+}
+to {
+  box-shadow: 0 0 0 10px rgba(0,0,0,0);
+}
+}
+
+@keyframes shadow {
+from {
+  box-shadow: 0 0 0 rgba(0,0,0,.25);
+}
+to {
+  box-shadow: 0 0 0 10px rgba(0,0,0,0);
+}
+}
+
+
+
+
+
+body{
+  background: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #2dc997;
+}
+
+a:hover, a:active, a:focus {
+  color: #2dca98;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#hero h1 {
+  margin: 30px 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+#hero h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    font-weight: 800;
+  }
+}
+
+#hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#hero .btn-get-started:hover {
+  background: #800080  ;
+  border: 2px solid #800080;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@500&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body{
+    background-color: black;
+
+}
+.nav{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    height: 100px;
+    background: rgb(103, 14, 14);
+}
+.navbar{
+    height:100px;
+    width:100px;
+
+}
+.navbar img{
+    width:8em;
+    height:7em;
+    margin:0em 1em;
+    padding:0em 1em;
+}
+.navcontent ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+    margin: 0em 1em        ;
+    padding:1em 1em;
+}
+.navcontent ul li{
+    margin: 1em 1em;
+    padding:1em 1em;
+    list-style: none;
+}
+
+.navcontent ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+.wds_logo  img{
+    display: block;
+    float:right;
+    height: 5.5em;
+    margin:10px 10px;
+    padding:10px 10px;
+}
+.header{
+    width: 40vw;
+    text-align: center;
+    margin: 7vh auto ;
+    font-size: 8vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 7.2vh;
+    gap: 0.2vh;
+}
+.container{
+  background-color: black;
+  
+}
+.box {
+    padding: 0.5vw;
+    margin: 0.5vh 0.5vw ;
+    border-radius: 0.65vh;
+    background-color: rgb(229 210 241 / 95%);
+    cursor: pointer;
+    
+}
+.box:hover{
+  transform: scale(1.05);
+}
+
+
+.name{
+    text-align:left;
+    display: inline-block;
+    font-size: 1.2vw;
+    width: 10vw;
+    /* /* margin-right: 0.9vw; */
+    margin-left: 0.5vh; 
+    color: rgb(0,0,0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.points{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 1.1vw;
+    font-weight: 900;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+   
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+/* Reset some default margin/padding for consistency */
+.News, h1, h2, p {
+    margin: 1;
+    padding: 1;
+}
+
+/* Set background color for the whole page */
+.News {
+    /* background-color: #008080; */
+    /* background-color: black; */
+    color: white;
+}
+
+/* Style for the top-left logo */
+.logo-left img {
+    /* Add your top-left logo styling here */
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    margin: 15px;
+    margin-left: 30px;
+    float: left;
+}
+
+/* Style for the top-right logo */
+.logo-right img {
+    /* Add your top-right logo styling here */
+    width: 150px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin: 5px;
+     margin-top: 30px;
+     margin-right: 30px;
+    float: right;
+}
+
+/* Style for the news container */
+.news-container {
+    margin: 80px; /* Adjust the margin as needed */
+    display: grid;
+    grid-template-columns: 1fr; /* Single column grid for news */
+    grid-gap: 20px; /* Gap between news boxes */
+}
+
+/* Style for the "ROUND X" heading */
+.round-heading {
+    text-align: center;
+    margin: 40px;
+    font-size: 50px;
+}
+
+/* Style for the news boxes */
+.news-box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Style for news number */
+.news-number {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 45px;
+}
+.IPO{
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    overflow-x: hidden;
+    
+}
+.IPO header
+{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin:20px;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+.x1{
+   
+    border: 1px solid white ;
+    /* background-image: url(media/iPhone\ X\ Wallpapers_\ Photo.jpeg);
+     */
+     background-color: #1a1919;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    color: rgb(254, 254, 254);
+    font-size: 20px;
+    text-align: center;
+    max-width: 100%;
+    width: 1000px;
+    margin:100px;
+    margin-left: 261px;
+    margin-right: 400px;
+    padding: 50px;
+  
+}
