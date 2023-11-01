@@ -1,1403 +1,595 @@
-<!DOCTYPE html>
-<html lang="en">
+$icon: 400 1em/50px 'FontAwesome';
 
-<!-- Mirrored from ecell.iiti.ac.in/iplauction/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jan 2023 09:49:04 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+.social{
+margin: 0 auto;
+padding-top: 100px;
+width: 400px;
 
-<head>
-  <link rel="icon" href="img/wolf.png" type="image/png" sizes="76x76">
-  <meta charset="utf-8">
-  <title>Wolf of Dalal Street</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Favicons -->
-  <link href="img/favicon.html" rel="icon">
-  <link href="vendor/bootstrap/css/bootstrap.min.html" rel="stylesheet">
-  <link href="../../maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template -->
-  <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-  <link href="vendor/fontawesome-free/css/all.min.html" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Barlow%20Semi%20Condensed' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-    rel="stylesheet">
-  <link href="../your-path-to-fontawesome/css/fontawesome.html" rel="stylesheet">
-  <link href="../your-path-to-fontawesome/css/brands.html" rel="stylesheet">
-  <link href="../your-path-to-fontawesome/css/solid.html" rel="stylesheet"> <!-- custom styling for all icons -->
+ul{
+  li{
+    background: #222;
+    border-radius: 50;
+    float: left;
+    height: 50px;
+    list-style: none;
+    margin: 0 10px;
+    width: 50px;
 
-  <!-- Custom styles for this template -->
-  <link href="css/grayscale.min.html" rel="stylesheet">
-  <link href="img/apple-touch-icon.html" rel="apple-touch-icon">
-  <link href="vendor/fontawesome-free/css/all.min.html" rel="stylesheet">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
-    rel="stylesheet">
+    &:before{
+      font: $icon;
+    }
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    &:hover{
+      animation: transform .5s forwards, shadow 1s forwards;
+      -ms-animation: transform .5s forwards, shadow 1s forwards;
+      -moz-animation: transform .5s forwards, shadow 1s forwards;
+      -webkit-animation: transform .5s forwards, shadow 1s forwards;
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
+    }
+  }
 
-  <!-- Main Stylesheet File -->
-  <link href="style.css" rel="stylesheet">
-  <link rel="stylesheet" href="slider_js.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+  .facebook{
+    &:hover{
+      background: #3b5998;
+    }
 
-  <!-- =======================================================
-    Theme Name: Regna
-    Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
-</head>
+    &:before{
+      color: #fff;
+      content:'\f09a';
+      display: block;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
 
-<body>
+  .twitter{
+    &:hover{
+      background: #00aced;
+    }
 
+    &:before{
+      color: #fff;
+      content:'\f099';
+      display: block;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
+
+  .google{
+    &:hover{
+      background: #dd4b39;
+    }
+
+    &:before{
+      color: #fff;
+      content:'\f0d5';
+      display: block;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
+
+  .instagram{
+    &:hover{
+      background: #517fa4;
+    }
+
+    &:before{
+      color: #fff;
+      content:'\f16d';
+      display: block;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
+}
+}
+@import url('../../../maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+*{
+
+}
+a, a:hover {
+	text-decoration: none;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+	margin: 0;
+	padding: 5px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+    color: #FFF;
+	background-color: #000;
+	width: 40px;
+    height: 40px;
+    padding-top: 12px;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-o-border-radius: 20px;
+  transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+  	transform: rotate(-360deg);
+	-moz-transform: rotate(-360deg);
+	-webkit-transform: rotate(-360deg);
+	-o-transform: rotate(-360deg);
+}
+
+.socialbtns .fa:hover {
+	transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+	transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+}
+
+
+@-webkit-keyframes transform {
+from {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+}
+
+to {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+}
+}
+
+@keyframes transform {
+from {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+}
+
+to {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+}
+}
+
+@-webkit-keyframes shadow {
+from {
+  box-shadow: 0 0 0 rgba(0,0,0,.25);
+}
+to {
+  box-shadow: 0 0 0 10px rgba(0,0,0,0);
+}
+}
+
+@keyframes shadow {
+from {
+  box-shadow: 0 0 0 rgba(0,0,0,.25);
+}
+to {
+  box-shadow: 0 0 0 10px rgba(0,0,0,0);
+}
+}
+
+
+
+
+
+body{
+  background: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #2dc997;
+}
+
+a:hover, a:active, a:focus {
+  color: #2dca98;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#hero h1 {
+  margin: 30px 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+#hero h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    font-weight: 800;
+  }
+}
+
+#hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#hero .btn-get-started:hover {
+  background: #800080  ;
+  border: 2px solid #800080;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@500&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body{
+    background-color: rgb(0, 0, 0);
+
+}
+.nav{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    height: 100px;
+    background: rgb(103, 14, 14);
+}
+.navbar{
+    height:100px;
+    width:100px;
+
+}
+.navbar img{
+    width:8em;
+    height:7em;
+    margin:0em 1em;
+    padding:0em 1em;
+}
+.navcontent ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+    margin: 0em 1em        ;
+    padding:1em 1em;
+}
+.navcontent ul li{
+    margin: 1em 1em;
+    padding:1em 1em;
+    list-style: none;
+}
+
+.navcontent ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+.wds_logo  img{
+    display: block;
+    float:right;
+    height: 5.5em;
+    margin:10px 10px;
+    padding:10px 10px;
+}
+.header{
+    width: 40vw;
+    text-align: center;
+    margin: 7vh auto ;
+    font-size: 8vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 7.2vh;
+    gap: 0.2vh;
+}
+.container{
+  background-color: black;
   
-
-  <!--==========================
-    Hero Section
-  ============================-->
-  <section id="hero">
-
-    <video autoplay loop muted src="img/wds.trailer.mp4"></video>
-    <div class="hero-container">
-      <h1>WOLF OF DALAL STREET</h1><br>
-      <h2 class="purple">Round 1 </h2>
-      <div style="display: flex;">
-        <a href="#Newssection" class="btn-get-started">NEWS</a>
-        <a href="#stockwatchlist" class="btn-get-started">Stocks Watchlist</a>
-      
-     
-        <a href="#IPOsection" class="btn-get-started">IPO</a>
-
-        <!-- <a href="#schedule" class="btn-get-started">SCHEDULE</a> -->
+}
+.box {
+    padding: 0.5vw;
+    margin: 0.5vh 0.5vw ;
+    border-radius: 0.65vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    cursor: pointer;
+    
+}
+.box:hover{
+  transform: scale(1.05);
+  font-weight: 900;
+}
 
 
+.name{
+    text-align:left;
+    display: inline-block;
+    font-size: 1.2vw;
+    width: 10vw;
+    /* /* margin-right: 0.9vw; */
+    margin-left: 0.5vh; 
+    color: #437BF2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
 
-        <!-- <div style="display: flex;">
-          <a href="#speaker" class="btn-get-started">SPEAKER</a>
+.points{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 1.1vw;
+    font-weight: 900;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-        </div> -->
-</div>
-      
-    </div>
-  </section><!-- #hero -->
-  <!-- <div class="nav">
-    <div class="navbar">
-        <img src="media/Econ(White).png" alt="">
-        
-    </div>
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+/* Reset some default margin/padding for consistency */
+.News, h1, h2, p {
+    margin: 1;
+    padding: 1;
+}
+
+/* Set background color for the whole page */
+.News {
+    /* background-color: #008080; */
+    /* background-color: black; */
+    color: white;
+}
+
+/* Style for the top-left logo */
+.logo-left img {
+    /* Add your top-left logo styling here */
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    margin: 15px;
+    margin-left: 30px;
+    float: left;
+}
+
+/* Style for the top-right logo */
+.logo-right img {
+    /* Add your top-right logo styling here */
+    width: 150px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin: 5px;
+     margin-top: 30px;
+     margin-right: 30px;
+    float: right;
+}
+
+/* Style for the news container */
+.news-container {
+    margin: 80px; /* Adjust the margin as needed */
+    display: grid;
+    grid-template-columns: 1fr; /* Single column grid for news */
+    grid-gap: 20px; /* Gap between news boxes */
+}
+
+/* Style for the "ROUND X" heading */
+.round-heading {
+    text-align: center;
+    font-size: 3em;
+}
+
+/* Style for the news boxes */
+.news-box {
+    background-color: rgb(0, 0, 0);
+    color: black;
+    /* padding: 20px; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    display:grid;
+    grid-template-columns: 1fr 11fr ;
+}
+.breakingnews{
+  height: 4.5em;
+  width: 10em;
+  color: #ffffff;
+  background-color: #ff0000c7;
+  z-index: 1;
+}
+.breakingnews span{
+  display: inline-block;
+  margin: 0.1em 0.5em ;
+  padding: 0.1em 0.1em;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.newscontent{
+  background-color:white ;
+  height: 3rem;
+  margin-top: 0.7em;
+}
+.marquee {
+  padding-right: 20px;
+  margin: -36px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10000ms linear infinite;
+}
+
+.marquee2 span {
+  animation-delay: 2.5s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+ } 
+
+/* Style for news number */
+.news-number {
+    font-weight: bold;
+    margin-left: 0.5em;
+    font-size: 2em;
+}
+
+.IPO{
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    overflow-x: hidden;
+    
+}
+.IPO header
+{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin:20px;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+.x1{
    
-    <div class="navcontent">
-        <ul>
-            <li><a href="">Stocks Watchlist</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">IPO</a></li>
-        </ul>
-    </div>
-    <div class="wds_logo">
-        <img src="media/1.png" alt="">
-    </div>
-    
-</div> -->
-
-<!-- ////////////// INITIAL PRICES//////////////////////// -->
-
-
-    <div class="container" id="stockwatchlist">
-
-        <!-- <video autoplay loop muted plays-inline class="back-video">
-             <source src="media/bg_video.mp4" type="video/mp4"> -->
-        <!-- </video> --> 
-
-        <header>
-            <div class="header">
-                Stocks Watchlist
-            </div>
-        </header>
-
-        <div class="grid">
-
-            <div class="box">
-                <div class="name">Nifty 50</div>
-                <div class="points">19,122.20</div>
-            </div>
-            <div class="box">
-                <div class="name">Sensex</div>
-                <div class="points">64,049.06</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty Bank</div>
-                <div class="points">42,832.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty IT</div>
-                <div class="points">30,530.50</div>
-            </div>
-            <div class="box">
-                <div class="name">HDFC Bank</div>
-                <div class="points">1,496.50</div>
-            </div>
-            <div class="box">
-                <div class="name">Reliance</div>
-                <div class="points">2,257.95</div>
-            </div>
-            <div class="box">
-                <div class="name">ICICI Bank</div>
-                <div class="points">916.10</div>
-            </div>
-            <div class="box">
-                <div class="name">Infosys</div>
-                <div class="points">1,370.05</div>
-            </div>
-            <div class="box">
-                <div class="name">SBI</div>
-                <div class="points">560.80</div>
-            </div>
-            <div class="box">
-                <div class="name">Axis Bank</div>
-                <div class="points">974.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty 50</div>
-                <div class="points">19,122.20</div>
-            </div>
-            <div class="box">
-                <div class="name">Sensex</div>
-                <div class="points">64,049.06</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty Bank</div>
-                <div class="points">42,832.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty IT</div>
-                <div class="points">30,530.50</div>
-            </div>
-            <div class="box">
-                <div class="name">HDFC Bank</div>
-                <div class="points">1,496.50</div>
-            </div>
-            <div class="box">
-                <div class="name">Reliance</div>
-                <div class="points">2,257.95</div>
-            </div>
-            <div class="box">
-                <div class="name">ICICI Bank</div>
-                <div class="points">916.10</div>
-            </div>
-            <div class="box">
-                <div class="name">Infosys</div>
-                <div class="points">1,370.05</div>
-            </div>
-            <div class="box">
-                <div class="name">SBI</div>
-                <div class="points">560.80</div>
-            </div>
-            <div class="box">
-                <div class="name">Axis Bank</div>
-                <div class="points">974.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty 50</div>
-                <div class="points">19,122.20</div>
-            </div>
-            <div class="box">
-                <div class="name">Sensex</div>
-                <div class="points">64,049.06</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty Bank</div>
-                <div class="points">42,832.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty IT</div>
-                <div class="points">30,530.50</div>
-            </div>
-            <div class="box">
-                <div class="name">HDFC Bank</div>
-                <div class="points">1,496.50</div>
-            </div>
-            <div class="box">
-                <div class="name">Reliance</div>
-                <div class="points">2,257.95</div>
-            </div>
-            <div class="box">
-                <div class="name">ICICI Bank</div>
-                <div class="points">916.10</div>
-            </div>
-            <div class="box">
-                <div class="name">Infosys</div>
-                <div class="points">1,370.05</div>
-            </div>
-            <div class="box">
-                <div class="name">SBI</div>
-                <div class="points">560.80</div>
-            </div>
-            <div class="box">
-                <div class="name">Axis Bank</div>
-                <div class="points">974.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty 50</div>
-                <div class="points">19,122.20</div>
-            </div>
-            <div class="box">
-                <div class="name">Sensex</div>
-                <div class="points">64,049.06</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty Bank</div>
-                <div class="points">42,832.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty IT</div>
-                <div class="points">30,530.50</div>
-            </div>
-            <div class="box">
-                <div class="name">HDFC Bank</div>
-                <div class="points">1,496.50</div>
-            </div>
-            <div class="box">
-                <div class="name">Reliance</div>
-                <div class="points">2,257.95</div>
-            </div>
-            <div class="box">
-                <div class="name">ICICI Bank</div>
-                <div class="points">916.10</div>
-            </div>
-            <div class="box">
-                <div class="name">Infosys</div>
-                <div class="points">1,370.05</div>
-            </div>
-            <div class="box">
-                <div class="name">SBI</div>
-                <div class="points">560.80</div>
-            </div>
-            <div class="box">
-                <div class="name">Axis Bank</div>
-                <div class="points">974.00</div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-<!-- //////////////////////NEWS ROUND 1//////////////////////////// -->
-
-
-
-    <div class="News" id="Newssection">
-      
+    border: 1px solid white ;
+    /* background-image: url(media/iPhone\ X\ Wallpapers_\ Photo.jpeg);
+     */
+     background-color: #1a1919;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    color: rgb(254, 254, 254);
+    font-size: 20px;
+    text-align: center;
+    max-width: 100%;
+    width: 1000px;
+    margin:100px;
+    margin-left: 261px;
+    margin-right: 400px;
+    padding: 50px;
   
-    <div class="news-container">
-        <h1 class="round-heading">NEWS HEADLINES</h1>
-        
-        <div class="news-box">
-            <div class="breakingnews">
-                <span>Breaking news</span>
-            </div>
-          <div class="newscontent">
-              <span class="news-number"></span>
-              <!-- <span class="newsheading"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aut laboriosam debitis voluptatibus quaerat ea deserunt fugiat accusamus iure sit!</span> -->
-              <p class="marquee">
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit id eum est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nulla natus reprehenderit eum blanditiis.</span>
-              </p>
-              <!-- <p class="marquee marquee2">
-                <span>This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text -&nbsp;</span>
-              </p> -->
-              <br><br>
-          </div>
-          
-        </div> 
-        <div class="news-box">
-            <div class="breakingnews">
-                <span>Breaking news</span>
-            </div>
-          <div class="newscontent">
-              <span class="news-number"></span>
-              <!-- <span class="newsheading"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi minus labore exercitationem magnam atque quisquam temporibus dolor explicabo illo neque.</span><br><br> -->
-              <p class="marquee">
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit id eum est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nulla natus reprehenderit eum blanditiis.</span>
-              </p>
-            </div>
-          
-        </div>
-        <div class="news-box">
-            <div class="breakingnews">
-                <span>Breaking news</span>
-            </div>
-          <div class="newscontent">
-              <span class="news-number"></span> 
-              <!-- <span class="newsheading"> News  content</span><br><br> -->
-              <p class="marquee">
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit id eum est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nulla natus reprehenderit eum blanditiis.</span>
-              </p>
-            </div>
-          
-        </div>
-        <div class="news-box">
-            <div class="breakingnews">
-                <span>Breaking news</span>
-            </div>
-          <div class="newscontent">
-              <span class="news-number"></span> 
-              <!-- <span class="newsheading"> News  content</span><br><br> -->
-              <p class="marquee">
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit id eum est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nulla natus reprehenderit eum blanditiis.</span>
-              </p>
-            </div>
-          
-        </div>
-        <div class="news-box">
-            <div class="breakingnews">
-                <span>Breaking news</span>
-            </div>
-          <div class="newscontent">
-              <span class="news-number"></span> 
-              <!-- <span class="newsheading"> News  content</span><br><br> -->
-              <p class="marquee">
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit id eum est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nulla natus reprehenderit eum blanditiis.</span>
-              </p>
-            </div>
-          
-        </div>
-        <div class="news-box">
-            <div class="breakingnews">
-                <span>Breaking news</span>
-            </div>
-          <div class="newscontent">
-              <span class="news-number"></span> 
-              <!-- <span class="newsheading"> News </span><br><br> -->
-              <p class="marquee">
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit id eum est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nulla natus reprehenderit eum blanditiis.</span>
-              </p>
-          </div>
-          
-        </div>
-        <div class="news-box">
-            <div class="breakingnews">
-                <span>Breaking news</span>
-            </div>
-          <div class="newscontent">
-              <span class="news-number"></span>
-              <!-- <span class="newsheading"> News  content</span> -->
-              <p class="marquee">
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit id eum est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nulla natus reprehenderit eum blanditiis.</span>
-              </p>
-              <br><br>
-          </div>
-          
-        </div>
-       
-    </div>
-    </div>
-
-
-
-<!-- ///////////////////////////ROUND 2 ///////////////////////////////////////-->
-
-
-    
-    <!-- <div class="container">
-
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="media/bg_video.mp4" type="video/mp4">
-        </video>
-
-        <header>
-            <div class="header">
-                Stocks Watchlist2
-            </div>
-        </header>
-
-        <div class="grid">
-
-            <div class="box">
-                <div class="name">Nifty 50</div>
-                <div class="points">19,122.20</div>
-            </div>
-            <div class="box">
-                <div class="name">Sensex</div>
-                <div class="points">64,049.06</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty Bank</div>
-                <div class="points">42,832.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty IT</div>
-                <div class="points">30,530.50</div>
-            </div>
-            <div class="box">
-                <div class="name">HDFC Bank</div>
-                <div class="points">1,496.50</div>
-            </div>
-            <div class="box">
-                <div class="name">Reliance</div>
-                <div class="points">2,257.95</div>
-            </div>
-            <div class="box">
-                <div class="name">ICICI Bank</div>
-                <div class="points">916.10</div>
-            </div>
-            <div class="box">
-                <div class="name">Infosys</div>
-                <div class="points">1,370.05</div>
-            </div>
-            <div class="box">
-                <div class="name">SBI</div>
-                <div class="points">560.80</div>
-            </div>
-            <div class="box">
-                <div class="name">Axis Bank</div>
-                <div class="points">974.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty 50</div>
-                <div class="points">19,122.20</div>
-            </div>
-            <div class="box">
-                <div class="name">Sensex</div>
-                <div class="points">64,049.06</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty Bank</div>
-                <div class="points">42,832.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty IT</div>
-                <div class="points">30,530.50</div>
-            </div>
-            <div class="box">
-                <div class="name">HDFC Bank</div>
-                <div class="points">1,496.50</div>
-            </div>
-            <div class="box">
-                <div class="name">Reliance</div>
-                <div class="points">2,257.95</div>
-            </div>
-            <div class="box">
-                <div class="name">ICICI Bank</div>
-                <div class="points">916.10</div>
-            </div>
-            <div class="box">
-                <div class="name">Infosys</div>
-                <div class="points">1,370.05</div>
-            </div>
-            <div class="box">
-                <div class="name">SBI</div>
-                <div class="points">560.80</div>
-            </div>
-            <div class="box">
-                <div class="name">Axis Bank</div>
-                <div class="points">974.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty 50</div>
-                <div class="points">19,122.20</div>
-            </div>
-            <div class="box">
-                <div class="name">Sensex</div>
-                <div class="points">64,049.06</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty Bank</div>
-                <div class="points">42,832.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty IT</div>
-                <div class="points">30,530.50</div>
-            </div>
-            <div class="box">
-                <div class="name">HDFC Bank</div>
-                <div class="points">1,496.50</div>
-            </div>
-            <div class="box">
-                <div class="name">Reliance</div>
-                <div class="points">2,257.95</div>
-            </div>
-            <div class="box">
-                <div class="name">ICICI Bank</div>
-                <div class="points">916.10</div>
-            </div>
-            <div class="box">
-                <div class="name">Infosys</div>
-                <div class="points">1,370.05</div>
-            </div>
-            <div class="box">
-                <div class="name">SBI</div>
-                <div class="points">560.80</div>
-            </div>
-            <div class="box">
-                <div class="name">Axis Bank</div>
-                <div class="points">974.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty 50</div>
-                <div class="points">19,122.20</div>
-            </div>
-            <div class="box">
-                <div class="name">Sensex</div>
-                <div class="points">64,049.06</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty Bank</div>
-                <div class="points">42,832.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty IT</div>
-                <div class="points">30,530.50</div>
-            </div>
-            <div class="box">
-                <div class="name">HDFC Bank</div>
-                <div class="points">1,496.50</div>
-            </div>
-            <div class="box">
-                <div class="name">Reliance</div>
-                <div class="points">2,257.95</div>
-            </div>
-            <div class="box">
-                <div class="name">ICICI Bank</div>
-                <div class="points">916.10</div>
-            </div>
-            <div class="box">
-                <div class="name">Infosys</div>
-                <div class="points">1,370.05</div>
-            </div>
-            <div class="box">
-                <div class="name">SBI</div>
-                <div class="points">560.80</div>
-            </div>
-            <div class="box">
-                <div class="name">Axis Bank</div>
-                <div class="points">974.00</div>
-            </div>
-
-        </div>
-    </div> -->
-
-
-<!-- ////////////NEWS ROUND 2//////////////////////////// -->
-
-
-
-      <!-- <div class="News">
-    <header>
-        <div class="logo-left">
-          <img src="media/Econ(White).png" alt="">
-        </div>
-        <div class="logo-right">
-           <img src="media/1.png" alt="">
-        </div>
-    </header>
-    <div class="news-container">
-        <h1 class="round-heading">ROUND 2</h1>
-        <div class="news-box">
-            <span class="news-number">1.</span> News  content<br><br>
-          
-        </div>
-        <div class="news-box">
-            <span class="news-number">2.</span> News content<br><br>
-           
-        </div>
-        <div class="news-box">
-            <span class="news-number">3.</span> News  content<br><br>
-           
-        </div>
-        <div class="news-box">
-            <span class="news-number">4.</span> News  content<br><br>
-            
-        </div>
-        <div class="news-box">
-            <span class="news-number">5.</span> News content<br><br>
-            
-        </div>
-       
-    </div>
-    </div> -->
-
-
-
-<!-- ////////////////////  IPO //////////////////// -->
-
-
-
-    <div class="IPO" id="IPOsection">
-    <header>
-        <h1>IPO Allotment</h1>
-        <h2>Company name</h2>
-    </header>
-    <main>
-    <article>
-        <div class="x1">
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, eaque. Nulla sint amet delectus assumenda id a sed. Numquam aspernatur voluptates ipsum delectus esse pariatur enim facere dolores, sunt fuga?
-            </p>
-        
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia numquam esse sed ullam est vel soluta nulla vero consequuntur corporis? Perferendis, minus neque. Doloribus suscipit pariatur maiores quibusdam odit eum.
-            </p>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nemo voluptatum neque temporibus dolorum doloremque, officia est laudantium praesentium, quod incidunt nisi voluptatibus suscipit sequi a enim autem aperiam beatae!
-            </p>
-        </div>
-    </article></main></div>
-
-
-<!-- /////////////// ROUND 3 /////////////////////////// -->
-
-
-   <!-- <div class="container">
-
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="media/bg_video.mp4" type="video/mp4">
-        </video>
-
-        <header>
-            <div class="header">
-                Stocks Watchlist3
-            </div>
-        </header>
-
-        <div class="grid">
-
-            <div class="box">
-                <div class="name">Nifty 50</div>
-                <div class="points">19,122.20</div>
-            </div>
-            <div class="box">
-                <div class="name">Sensex</div>
-                <div class="points">64,049.06</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty Bank</div>
-                <div class="points">42,832.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty IT</div>
-                <div class="points">30,530.50</div>
-            </div>
-            <div class="box">
-                <div class="name">HDFC Bank</div>
-                <div class="points">1,496.50</div>
-            </div>
-            <div class="box">
-                <div class="name">Reliance</div>
-                <div class="points">2,257.95</div>
-            </div>
-            <div class="box">
-                <div class="name">ICICI Bank</div>
-                <div class="points">916.10</div>
-            </div>
-            <div class="box">
-                <div class="name">Infosys</div>
-                <div class="points">1,370.05</div>
-            </div>
-            <div class="box">
-                <div class="name">SBI</div>
-                <div class="points">560.80</div>
-            </div>
-            <div class="box">
-                <div class="name">Axis Bank</div>
-                <div class="points">974.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty 50</div>
-                <div class="points">19,122.20</div>
-            </div>
-            <div class="box">
-                <div class="name">Sensex</div>
-                <div class="points">64,049.06</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty Bank</div>
-                <div class="points">42,832.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty IT</div>
-                <div class="points">30,530.50</div>
-            </div>
-            <div class="box">
-                <div class="name">HDFC Bank</div>
-                <div class="points">1,496.50</div>
-            </div>
-            <div class="box">
-                <div class="name">Reliance</div>
-                <div class="points">2,257.95</div>
-            </div>
-            <div class="box">
-                <div class="name">ICICI Bank</div>
-                <div class="points">916.10</div>
-            </div>
-            <div class="box">
-                <div class="name">Infosys</div>
-                <div class="points">1,370.05</div>
-            </div>
-            <div class="box">
-                <div class="name">SBI</div>
-                <div class="points">560.80</div>
-            </div>
-            <div class="box">
-                <div class="name">Axis Bank</div>
-                <div class="points">974.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty 50</div>
-                <div class="points">19,122.20</div>
-            </div>
-            <div class="box">
-                <div class="name">Sensex</div>
-                <div class="points">64,049.06</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty Bank</div>
-                <div class="points">42,832.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty IT</div>
-                <div class="points">30,530.50</div>
-            </div>
-            <div class="box">
-                <div class="name">HDFC Bank</div>
-                <div class="points">1,496.50</div>
-            </div>
-            <div class="box">
-                <div class="name">Reliance</div>
-                <div class="points">2,257.95</div>
-            </div>
-            <div class="box">
-                <div class="name">ICICI Bank</div>
-                <div class="points">916.10</div>
-            </div>
-            <div class="box">
-                <div class="name">Infosys</div>
-                <div class="points">1,370.05</div>
-            </div>
-            <div class="box">
-                <div class="name">SBI</div>
-                <div class="points">560.80</div>
-            </div>
-            <div class="box">
-                <div class="name">Axis Bank</div>
-                <div class="points">974.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty 50</div>
-                <div class="points">19,122.20</div>
-            </div>
-            <div class="box">
-                <div class="name">Sensex</div>
-                <div class="points">64,049.06</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty Bank</div>
-                <div class="points">42,832.00</div>
-            </div>
-            <div class="box">
-                <div class="name">Nifty IT</div>
-                <div class="points">30,530.50</div>
-            </div>
-            <div class="box">
-                <div class="name">HDFC Bank</div>
-                <div class="points">1,496.50</div>
-            </div>
-            <div class="box">
-                <div class="name">Reliance</div>
-                <div class="points">2,257.95</div>
-            </div>
-            <div class="box">
-                <div class="name">ICICI Bank</div>
-                <div class="points">916.10</div>
-            </div>
-            <div class="box">
-                <div class="name">Infosys</div>
-                <div class="points">1,370.05</div>
-            </div>
-            <div class="box">
-                <div class="name">SBI</div>
-                <div class="points">560.80</div>
-            </div>
-            <div class="box">
-                <div class="name">Axis Bank</div>
-                <div class="points">974.00</div>
-            </div>
-
-        </div>
-    </div> -->
-
-
-
-
-<!-- ////////////// NEWS ROUND 3 //////////////// -->
-
-
-
-    <!-- <div class="News">
-        <header>
-            <div class="logo-left">
-              <img src="media/Econ(White).png" alt="">
-            </div>
-            <div class="logo-right">
-               <img src="media/1.png" alt="">
-            </div>
-        </header>
-        <div class="news-container">
-            <h1 class="round-heading">ROUND 3</h1>
-            <div class="news-box">
-                <span class="news-number">1.</span> News  content<br><br>
-              
-            </div>
-            <div class="news-box">
-                <span class="news-number">2.</span> News content<br><br>
-               
-            </div>
-            <div class="news-box">
-                <span class="news-number">3.</span> News  content<br><br>
-               
-            </div>
-            <div class="news-box">
-                <span class="news-number">4.</span> News  content<br><br>
-                
-            </div>
-            <div class="news-box">
-                <span class="news-number">5.</span> News content<br><br>
-                
-            </div>
-           
-        </div>
-        </div> -->
-
-
-
-<!-- ///////////////  ROUND 4  ///////////////////// -->
-
-
-
-        <!-- <div class="container">
-
-            <video autoplay loop muted plays-inline class="back-video">
-                <source src="media/bg_video.mp4" type="video/mp4">
-            </video>
-    
-            <header>
-                <div class="header">
-                    Stocks Watchlist4
-                </div>
-            </header>
-    
-            <div class="grid">
-    
-                <div class="box">
-                    <div class="name">Nifty 50</div>
-                    <div class="points">19,122.20</div>
-                </div>
-                <div class="box">
-                    <div class="name">Sensex</div>
-                    <div class="points">64,049.06</div>
-                </div>
-                <div class="box">
-                    <div class="name">Nifty Bank</div>
-                    <div class="points">42,832.00</div>
-                </div>
-                <div class="box">
-                    <div class="name">Nifty IT</div>
-                    <div class="points">30,530.50</div>
-                </div>
-                <div class="box">
-                    <div class="name">HDFC Bank</div>
-                    <div class="points">1,496.50</div>
-                </div>
-                <div class="box">
-                    <div class="name">Reliance</div>
-                    <div class="points">2,257.95</div>
-                </div>
-                <div class="box">
-                    <div class="name">ICICI Bank</div>
-                    <div class="points">916.10</div>
-                </div>
-                <div class="box">
-                    <div class="name">Infosys</div>
-                    <div class="points">1,370.05</div>
-                </div>
-                <div class="box">
-                    <div class="name">SBI</div>
-                    <div class="points">560.80</div>
-                </div>
-                <div class="box">
-                    <div class="name">Axis Bank</div>
-                    <div class="points">974.00</div>
-                </div>
-                <div class="box">
-                    <div class="name">Nifty 50</div>
-                    <div class="points">19,122.20</div>
-                </div>
-                <div class="box">
-                    <div class="name">Sensex</div>
-                    <div class="points">64,049.06</div>
-                </div>
-                <div class="box">
-                    <div class="name">Nifty Bank</div>
-                    <div class="points">42,832.00</div>
-                </div>
-                <div class="box">
-                    <div class="name">Nifty IT</div>
-                    <div class="points">30,530.50</div>
-                </div>
-                <div class="box">
-                    <div class="name">HDFC Bank</div>
-                    <div class="points">1,496.50</div>
-                </div>
-                <div class="box">
-                    <div class="name">Reliance</div>
-                    <div class="points">2,257.95</div>
-                </div>
-                <div class="box">
-                    <div class="name">ICICI Bank</div>
-                    <div class="points">916.10</div>
-                </div>
-                <div class="box">
-                    <div class="name">Infosys</div>
-                    <div class="points">1,370.05</div>
-                </div>
-                <div class="box">
-                    <div class="name">SBI</div>
-                    <div class="points">560.80</div>
-                </div>
-                <div class="box">
-                    <div class="name">Axis Bank</div>
-                    <div class="points">974.00</div>
-                </div>
-                <div class="box">
-                    <div class="name">Nifty 50</div>
-                    <div class="points">19,122.20</div>
-                </div>
-                <div class="box">
-                    <div class="name">Sensex</div>
-                    <div class="points">64,049.06</div>
-                </div>
-                <div class="box">
-                    <div class="name">Nifty Bank</div>
-                    <div class="points">42,832.00</div>
-                </div>
-                <div class="box">
-                    <div class="name">Nifty IT</div>
-                    <div class="points">30,530.50</div>
-                </div>
-                <div class="box">
-                    <div class="name">HDFC Bank</div>
-                    <div class="points">1,496.50</div>
-                </div>
-                <div class="box">
-                    <div class="name">Reliance</div>
-                    <div class="points">2,257.95</div>
-                </div>
-                <div class="box">
-                    <div class="name">ICICI Bank</div>
-                    <div class="points">916.10</div>
-                </div>
-                <div class="box">
-                    <div class="name">Infosys</div>
-                    <div class="points">1,370.05</div>
-                </div>
-                <div class="box">
-                    <div class="name">SBI</div>
-                    <div class="points">560.80</div>
-                </div>
-                <div class="box">
-                    <div class="name">Axis Bank</div>
-                    <div class="points">974.00</div>
-                </div>
-                <div class="box">
-                    <div class="name">Nifty 50</div>
-                    <div class="points">19,122.20</div>
-                </div>
-                <div class="box">
-                    <div class="name">Sensex</div>
-                    <div class="points">64,049.06</div>
-                </div>
-                <div class="box">
-                    <div class="name">Nifty Bank</div>
-                    <div class="points">42,832.00</div>
-                </div>
-                <div class="box">
-                    <div class="name">Nifty IT</div>
-                    <div class="points">30,530.50</div>
-                </div>
-                <div class="box">
-                    <div class="name">HDFC Bank</div>
-                    <div class="points">1,496.50</div>
-                </div>
-                <div class="box">
-                    <div class="name">Reliance</div>
-                    <div class="points">2,257.95</div>
-                </div>
-                <div class="box">
-                    <div class="name">ICICI Bank</div>
-                    <div class="points">916.10</div>
-                </div>
-                <div class="box">
-                    <div class="name">Infosys</div>
-                    <div class="points">1,370.05</div>
-                </div>
-                <div class="box">
-                    <div class="name">SBI</div>
-                    <div class="points">560.80</div>
-                </div>
-                <div class="box">
-                    <div class="name">Axis Bank</div>
-                    <div class="points">974.00</div>
-                </div>
-    
-            </div>
-        </div> -->
-
-
-
-<!-- ///////////// NEWS ROUND 4 /////////////// -->
-
-
-        <!-- <div class="News">
-            <header>
-                <div class="logo-left">
-                  <img src="media/Econ(White).png" alt="">
-                </div>
-                <div class="logo-right">
-                   <img src="media/1.png" alt="">
-                </div>
-            </header>
-            <div class="news-container">
-                <h1 class="round-heading">ROUND 4</h1>
-                <div class="news-box">
-                    <span class="news-number">1.</span> News  content<br><br>
-                  
-                </div>
-                <div class="news-box">
-                    <span class="news-number">2.</span> News content<br><br>
-                   
-                </div>
-                <div class="news-box">
-                    <span class="news-number">3.</span> News  content<br><br>
-                   
-                </div>
-                <div class="news-box">
-                    <span class="news-number">4.</span> News  content<br><br>
-                    
-                </div>
-                <div class="news-box">
-                    <span class="news-number">5.</span> News content<br><br>
-                    
-                </div>
-               
-            </div>
-            </div>
- -->
-
-
- <!-- /////////////////  FPO  /////////////// -->
-
-
-    <!-- <div class="IPO">
-    <header>
-        <h1>FPO Allotment</h1>
-        <h2>Company name</h2>
-    </header>
-    <main>
-    <article>
-        <div class="x1">
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, eaque. Nulla sint amet delectus assumenda id a sed. Numquam aspernatur voluptates ipsum delectus esse pariatur enim facere dolores, sunt fuga?
-            </p>
-        
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia numquam esse sed ullam est vel soluta nulla vero consequuntur corporis? Perferendis, minus neque. Doloribus suscipit pariatur maiores quibusdam odit eum.
-            </p>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nemo voluptatum neque temporibus dolorum doloremque, officia est laudantium praesentium, quod incidunt nisi voluptatibus suscipit sequi a enim autem aperiam beatae!
-            </p>
-        </div>
-    </article></main></div> -->
-
-
-
-
-<!-- ////////// ROUND 5 ///////////////////////// -->
-
-
-
-            <!-- <div class="container">
-
-                <video autoplay loop muted plays-inline class="back-video">
-                    <source src="media/bg_video.mp4" type="video/mp4">
-                </video>
-        
-                <header>
-                    <div class="header">
-                        Stocks Watchlist5
-                    </div>
-                </header>
-        
-                <div class="grid">
-        
-                    <div class="box">
-                        <div class="name">Nifty 50</div>
-                        <div class="points">19,122.20</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Sensex</div>
-                        <div class="points">64,049.06</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Nifty Bank</div>
-                        <div class="points">42,832.00</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Nifty IT</div>
-                        <div class="points">30,530.50</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">HDFC Bank</div>
-                        <div class="points">1,496.50</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Reliance</div>
-                        <div class="points">2,257.95</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">ICICI Bank</div>
-                        <div class="points">916.10</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Infosys</div>
-                        <div class="points">1,370.05</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">SBI</div>
-                        <div class="points">560.80</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Axis Bank</div>
-                        <div class="points">974.00</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Nifty 50</div>
-                        <div class="points">19,122.20</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Sensex</div>
-                        <div class="points">64,049.06</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Nifty Bank</div>
-                        <div class="points">42,832.00</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Nifty IT</div>
-                        <div class="points">30,530.50</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">HDFC Bank</div>
-                        <div class="points">1,496.50</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Reliance</div>
-                        <div class="points">2,257.95</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">ICICI Bank</div>
-                        <div class="points">916.10</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Infosys</div>
-                        <div class="points">1,370.05</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">SBI</div>
-                        <div class="points">560.80</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Axis Bank</div>
-                        <div class="points">974.00</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Nifty 50</div>
-                        <div class="points">19,122.20</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Sensex</div>
-                        <div class="points">64,049.06</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Nifty Bank</div>
-                        <div class="points">42,832.00</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Nifty IT</div>
-                        <div class="points">30,530.50</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">HDFC Bank</div>
-                        <div class="points">1,496.50</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Reliance</div>
-                        <div class="points">2,257.95</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">ICICI Bank</div>
-                        <div class="points">916.10</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Infosys</div>
-                        <div class="points">1,370.05</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">SBI</div>
-                        <div class="points">560.80</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Axis Bank</div>
-                        <div class="points">974.00</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Nifty 50</div>
-                        <div class="points">19,122.20</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Sensex</div>
-                        <div class="points">64,049.06</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Nifty Bank</div>
-                        <div class="points">42,832.00</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Nifty IT</div>
-                        <div class="points">30,530.50</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">HDFC Bank</div>
-                        <div class="points">1,496.50</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Reliance</div>
-                        <div class="points">2,257.95</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">ICICI Bank</div>
-                        <div class="points">916.10</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Infosys</div>
-                        <div class="points">1,370.05</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">SBI</div>
-                        <div class="points">560.80</div>
-                    </div>
-                    <div class="box">
-                        <div class="name">Axis Bank</div>
-                        <div class="points">974.00</div>
-                    </div>
-        
-                </div>
-            </div> -->
-
-<!-- //////////////////// NEWS ROUND 5 /////////////// -->
-
-
-     <!-- <div class="News">
-    <header>
-        <div class="logo-left">
-          <img src="media/Econ(White).png" alt="">
-        </div>
-        <div class="logo-right">
-           <img src="media/1.png" alt="">
-        </div>
-    </header>
-    <div class="news-container">
-        <h1 class="round-heading">ROUND 5</h1>
-        <div class="news-box">
-            <span class="news-number">1.</span> News  content<br><br>
-          
-        </div>
-        <div class="news-box">
-            <span class="news-number">2.</span> News content<br><br>
-           
-        </div>
-        <div class="news-box">
-            <span class="news-number">3.</span> News  content<br><br>
-           
-        </div>
-        <div class="news-box">
-            <span class="news-number">4.</span> News  content<br><br>
-            
-        </div>
-        <div class="news-box">
-            <span class="news-number">5.</span> News content<br><br>
-            
-        </div>
-       
-    </div>
-    </div> -->
-  
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.html"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.html"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.html"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.html"></script>
-
-
-</body>
-
-
-
-</html>
-
-
-</footer><!-- #footer -->
-
-<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-<!-- JavaScript Libraries -->
-<script src="lib/jquery/jquery.min.js"></script>
-<script src="lib/jquery/jquery-migrate.min.js"></script>
-<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
-<script src="lib/superfish/hoverIntent.js"></script>
-<script src="lib/superfish/superfish.min.js"></script>
-
-<!-- Template Main Javascript File -->
-<script src="js/main.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script src="slider.js"></script>
-<script>
-  $('.carousel').flipster({
-    style: 'carousel', spacing: -0.3
-  });
-</script>
-</body>
-
-</html>
-
-  <main id="main">
-
-    
+}
