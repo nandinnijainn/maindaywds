@@ -487,6 +487,7 @@ body{
 .round-heading {
     text-align: center;
     font-size: 3em;
+	color:white;
 }
 
 /* Style for the news boxes */
