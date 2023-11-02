@@ -487,7 +487,6 @@ body{
 .round-heading {
     text-align: center;
     font-size: 3em;
-	color:white;
 }
 
 /* Style for the news boxes */
@@ -553,48 +552,44 @@ body{
     font-size: 2em;
 }
 
-.shape{
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  background-color:black;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
+.IPO{
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    overflow-x: hidden;
+    
 }
-.circle {
-width: 300px;
-height: 300px;
-background-color:brown;
-border-radius: 50%;
-display: inline-block;
-margin-left: -904px;
-position: absolute;
+.IPO header
+{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin:20px;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
 }
-
-.rectangle {
-width: 1000px;
-height: 500px;
-background-color:white;
-margin-left: 116px;
-margin-top: 2px;
-}
-.iponame{
-  margin: 2.3em 1.8em;
-  color: white;
-
-}
-.ipocontent{
-  margin-left: 10em;
-  margin-top: 2em;
-}
-.ipo-number{
-  font-size: 1.2em;
-  font-weight: 700;
-
-}
-.ipodetails{
-  font-size: 1.1em;
-  margin:0em 0.1em;
+.x1{
+   
+    border: 1px solid white ;
+    /* background-image: url(media/iPhone\ X\ Wallpapers_\ Photo.jpeg);
+     */
+     background-color: #1a1919;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    color: rgb(254, 254, 254);
+    font-size: 20px;
+    text-align: center;
+    max-width: 100%;
+    width: 1000px;
+    margin:100px;
+    margin-left: 261px;
+    margin-right: 400px;
+    padding: 50px;
   
 }
