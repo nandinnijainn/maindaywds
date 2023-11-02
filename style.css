@@ -525,6 +525,7 @@ body{
   white-space: nowrap;
   overflow: hidden;
   position: absolute;
+	font-weight: 600;
 }
 
 .marquee span {
