@@ -28,6 +28,9 @@ ul{
     }
   }
 
+  #wds_trail{
+    width: 100%;
+  }
   .facebook{
     &:hover{
       background: #3b5998;
