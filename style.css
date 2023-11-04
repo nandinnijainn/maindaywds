@@ -353,16 +353,15 @@ body{
     margin:10px 10px;
     padding:10px 10px;
 }
-.header{
-    width: 40vw;
-    text-align: center;
-    margin: 7vh auto ;
-    font-size: 8vh;
-    color: rgb(255, 255, 255);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 900;
+.header {
+  width: 100%; /* Use full width on all screens */
+  text-align: center;
+  margin: 2vh auto; /* Adjust margin for better centering */
+  font-size: 4vh; /* Adjust font size for different screen sizes */
+  font-weight: 700; /* Adjust font weight as needed */
+  color: rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -407,7 +406,7 @@ body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.back-video{
+/* .back-video{
     position: absolute;
     right: 0;
     bottom: 0;
@@ -422,10 +421,11 @@ body{
 }
 @media (max-aspect-ratio: 16/9){
     .back-video{
-        width: auto;
+        width:fit-content;
+        overflow-x: hidden;
         height: 100%;
     }
-}
+} */
 /* Reset some default margin/padding for consistency */
 .News, h1, h2, p {
     margin: 1;
@@ -471,8 +471,14 @@ body{
 /* Style for the "ROUND X" heading */
 .round-heading {
     text-align: center;
-    font-size: 3em;
+    font-size: 3.3em;
     color: white;
+    font-family: 800;
+}
+
+h1.round-heading{
+  margin: 0 0 50px 0;
+ 
 }
 
 /* Style for the news boxes */
@@ -527,7 +533,7 @@ body{
 
 
   
-.shape{
+/* .shape{
   display: flex;
   flex-direction: row;
   position: relative;
@@ -571,4 +577,208 @@ margin-top: 2px;
   font-size: 1.1em;
   margin:0em 0.1em;
   
+} */
+
+/* Base styles */
+.shape {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
+
+.circle {
+  width: 300px;
+  height: 300px;
+  background-color: brown;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -904px;
+  position: absolute;
+}
+
+.rectangle {
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+  margin-left: 116px;
+  margin-top: 2px;
+}
+
+.iponame {
+  margin: 2.3em 1.8em;
+  color: white;
+}
+
+.ipocontent {
+  margin-left: 10em;
+  margin-top: 2em;
+}
+
+.ipo-number {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.ipodetails {
+  font-size: 1.1em;
+  margin: 0em 0.1em;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+
+  #hero{
+    background-image: url(img/econ1.jpg);
+  }
+
+
+  .shape {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+
+  .circle {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    position: relative;
+  }
+
+  .rectangle {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    height: 1200px;
+  }
+
+  .iponame,
+  .ipocontent {
+    margin: 20px;
+    text-align: center;
+  }
+
+  body {
+
+    overflow-x: hidden;
+   
+  }
+
+  .back-video{
+    overflow-x: hidden;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #hero{
+    background-image: url(img/econ1.jpg);
+  }
+
+  body {
+
+    overflow-x: hidden;
+   
+  }
+
+  .rectangle {
+    max-width: 400px;
+  }
+
+  .ipocontent {
+    margin-left: 2em;
+  }
+
+  .back-video{
+    overflow-x: hidden;
+  }
+
+  #hero .back-video{
+    display: none;
+  }
+}
+
+/* Media query for smaller screens like phones */
+@media (max-width: 480px) {
+
+  #hero{
+    background-image: url(img/econ1.jpg);
+  }
+
+
+  body {
+
+    overflow-x: hidden;
+   
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rectangle {
+    width: 100%;
+    max-width: 90%;
+    margin: 20px auto;
+    height: 800;
+  }
+
+  .ipocontent {
+    margin-left: 1em;
+    text-align: center;
+  }
+
+  h2.iponame{
+    font-size: 1.3rem
+  }
+
+  h1.roundheading{
+    margin: 0 0 50px 0;
+  }
+
+  #hero .back-video{
+    display: none;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+
+  #hero{
+    background-image: url(img/econ1.jpg);
+  }
+
+  #hero .back-video{
+    display: none;
+  }
+  
+  .header {
+      font-size: 5vh; 
+  }
+}
+
+@media (min-width: 769px) {
+  #hero-video {
+      display: block; 
+  }
+}
+
+@media (max-width: 768px) {
+  #hero-video {
+      display: none; 
+  }
+}
+
+
+
