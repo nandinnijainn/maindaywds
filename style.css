@@ -1,9 +1,11 @@
 $icon: 400 1em/50px 'FontAwesome';
 
+
 .social{
 margin: 0 auto;
 padding-top: 100px;
 width: 400px;
+
 
 ul{
   li{
@@ -15,9 +17,11 @@ ul{
     margin: 0 10px;
     width: 50px;
 
+
     &:before{
       font: $icon;
     }
+
 
     &:hover{
       animation: transform .5s forwards, shadow 1s forwards;
@@ -25,8 +29,10 @@ ul{
       -moz-animation: transform .5s forwards, shadow 1s forwards;
       -webkit-animation: transform .5s forwards, shadow 1s forwards;
 
+
     }
   }
+
 
   #wds_trail{
     width: 100%;
@@ -35,6 +41,7 @@ ul{
     &:hover{
       background: #3b5998;
     }
+
 
     &:before{
       color: #fff;
@@ -45,10 +52,12 @@ ul{
     }
   }
 
+
   .twitter{
     &:hover{
       background: #00aced;
     }
+
 
     &:before{
       color: #fff;
@@ -59,18 +68,12 @@ ul{
     }
   }
 
- .newscontent {
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0;
-  padding: 0;
-}
-
 
   .google{
     &:hover{
       background: #dd4b39;
     }
+
 
     &:before{
       color: #fff;
@@ -81,10 +84,12 @@ ul{
     }
   }
 
+
   .instagram{
     &:hover{
       background: #517fa4;
     }
+
 
     &:before{
       color: #fff;
@@ -99,51 +104,58 @@ ul{
 @import url('../../../maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 *{
 
+
 }
 a, a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
+
 .socialbtns, .socialbtns ul, .socialbtns li {
-	margin: 0;
-	padding: 5px;
+  margin: 0;
+  padding: 5px;
 }
+
 
 .socialbtns li {
     list-style: none outside none;
     display: inline-block;
 }
 
+
 .socialbtns .fa {
     color: #FFF;
-	background-color: #000;
-	width: 40px;
+  background-color: #000;
+  width: 40px;
     height: 40px;
     padding-top: 12px;
-	border-radius: 20px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-o-border-radius: 20px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
   transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     -webkit-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
-  	transform: rotate(-360deg);
-	-moz-transform: rotate(-360deg);
-	-webkit-transform: rotate(-360deg);
-	-o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  -moz-transform: rotate(-360deg);
+  -webkit-transform: rotate(-360deg);
+  -o-transform: rotate(-360deg);
 }
 
+
 .socialbtns .fa:hover {
-	transition: all ease 0.3s;
+  transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     -webkit-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
-	transform: rotate(360deg);
-	-moz-transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	-o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
 }
+
+
 
 
 @-webkit-keyframes transform {
@@ -154,6 +166,7 @@ from {
   -ms-transform: translateY(0);
 }
 
+
 to {
   transform: translateY(-10px);
   -webkit-transform: translateY(-10px);
@@ -161,6 +174,7 @@ to {
   -ms-transform: translateY(-10px);
 }
 }
+
 
 @keyframes transform {
 from {
@@ -170,6 +184,7 @@ from {
   -ms-transform: translateY(0);
 }
 
+
 to {
   transform: translateY(-10px);
   -webkit-transform: translateY(-10px);
@@ -177,6 +192,7 @@ to {
   -ms-transform: translateY(-10px);
 }
 }
+
 
 @-webkit-keyframes shadow {
 from {
@@ -186,6 +202,7 @@ to {
   box-shadow: 0 0 0 10px rgba(0,0,0,0);
 }
 }
+
 
 @keyframes shadow {
 from {
@@ -200,15 +217,22 @@ to {
 
 
 
+
+
+
+
+
 body{
   background: #fff;
   color: #666666;
   font-family: "Open Sans", sans-serif;
 }
 
+
 a {
   color: #2dc997;
 }
+
 
 a:hover, a:active, a:focus {
   color: #2dca98;
@@ -216,10 +240,14 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
+
 p {
   padding: 0;
   margin: 0 0 30px 0;
 }
+
+
+
 
 
 
@@ -229,6 +257,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px 0;
   padding: 0;
 }
+
+
+
+
+
+
 
 
 
@@ -247,11 +281,15 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
+
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
 }
+
 
 #hero:before {
   content: "";
@@ -262,6 +300,7 @@ top: 0;
   left: 0;
   right: 0;
 }
+
 
 #hero .hero-container {
   position: absolute;
@@ -276,6 +315,7 @@ top: 0;
   text-align: center;
 }
 
+
 #hero h1 {
   margin: 30px 0 10px 0;
   font-size: 48px;
@@ -285,6 +325,7 @@ top: 0;
   color: #fff;
 }
 
+
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
@@ -292,11 +333,13 @@ top: 0;
   }
 }
 
+
 #hero h2 {
   color: #eee;
   margin-bottom: 50px;
   font-size: 40px;
 }
+
 
 @media (max-width: 768px) {
   #hero h2 {
@@ -306,6 +349,7 @@ top: 0;
     font-weight: 800;
   }
 }
+
 
 #hero .btn-get-started {
   font-family: "Poppins", sans-serif;
@@ -322,19 +366,22 @@ top: 0;
   color: #fff;
 }
 
+
 #hero .btn-get-started:hover {
   background: #800080  ;
   border: 2px solid #800080;
 }
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@500&family=Open+Sans&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box;  
 }
 body{
     background-color: rgb(0, 0, 0);
+
 
 }
 .nav{
@@ -346,6 +393,7 @@ body{
 .navbar{
     height:100px;
     width:100px;
+
 
 }
 .navbar img{
@@ -367,6 +415,7 @@ body{
     list-style: none;
 }
 
+
 .navcontent ul li a{
     text-decoration: none;
     color: white;
@@ -382,22 +431,23 @@ body{
 .header{
     width: 40vw;
     text-align: center;
-    margin: 7vh auto ;
+    margin: 3vh auto ;
     font-size: 8vh;
     color: rgb(255, 255, 255);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 900;
 }
 
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 7.2vh;
-    gap: 0.2vh;
+    grid-auto-rows: 7.8vh;
+    gap: 0.5vh;
 }
 .container{
   background-color: black;
-  
+ 
 }
 .box {
     padding: 0.5vw;
@@ -405,7 +455,7 @@ body{
     border-radius: 0.65vh;
     background-color: rgba(255, 255, 255, 0.95);
     cursor: pointer;
-    
+    align-items: center;
 }
 .box:hover{
   transform: scale(1.05);
@@ -413,17 +463,20 @@ body{
 }
 
 
+
+
 .name{
     text-align:left;
     display: inline-block;
-    font-size: 1.2vw;
+    font-size: 1vw;
     width: 10vw;
-    /* /* margin-right: 0.9vw; */
-    margin-left: 0.5vh; 
+    margin-right: 0.7vw;
+    margin-left: 0.5vh;
     color: #0022b6;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
 }
+
 
 .points{
     display: inline-block;
@@ -433,12 +486,14 @@ body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
 .back-video{
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
 }
+
 
 @media (min-aspect-ratio: 16/9){
     .back-video{
@@ -458,12 +513,14 @@ body{
     padding: 1;
 }
 
+
 /* Set background color for the whole page */
 .News {
     /* background-color: #008080; */
     /* background-color: black; */
     color: white;
 }
+
 
 /* Style for the top-left logo */
 .logo-left img {
@@ -474,6 +531,7 @@ body{
     margin-left: 30px;
     float: left;
 }
+
 
 /* Style for the top-right logo */
 .logo-right img {
@@ -486,6 +544,7 @@ body{
     float: right;
 }
 
+
 /* Style for the news container */
 .news-container {
     margin: 80px; /* Adjust the margin as needed */
@@ -494,14 +553,17 @@ body{
     grid-gap: 20px; /* Gap between news boxes */
 }
 
+
 /* Style for the "ROUND X" heading */
 .round-heading {
     text-align: center;
     font-size: 3em;
-	color:white;
+  color:white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 900;
 }
+
+
 
 
 /* Style for the news boxes */
@@ -521,7 +583,13 @@ body{
   background-color: #ff0000c7;
   z-index: 1;
 }
-
+.breakingnews span{
+  display: inline-block;
+  margin: 0.1em 0.5em ;
+  padding: 0.1em 0.1em;
+  font-size: 1.4em;
+  font-weight: 700;
+}
 .newscontent{
   background-color:white ;
   height: 3rem;
@@ -529,23 +597,26 @@ body{
 }
 .marquee {
   padding-right: 20px;
-  width :90%;
   margin: -36px;
   white-space: nowrap;
   overflow: hidden;
   position: absolute;
-	font-weight: 600;
+  font-weight: 600;
 }
+
 
 .marquee span {
   display: inline-block;
+  width: 75em;
   padding-left: 100%;
-  animation: marquee 20000ms linear infinite;
+  animation: marquee 10000ms linear infinite;
 }
+
 
 .marquee2 span {
   animation-delay: 2.5s;
 }
+
 
 @keyframes marquee {
   0% {
@@ -554,7 +625,8 @@ body{
   100% {
     transform: translate(-100%);
   }
- } 
+ }
+
 
 /* Style for news number */
 .news-number {
@@ -564,7 +636,9 @@ body{
 }
 
 
-  
+
+
+ 
 .shape{
   display: flex;
   flex-direction: row;
@@ -584,6 +658,7 @@ margin-left: -904px;
 position: absolute;
 }
 
+
 .rectangle {
 width: 1000px;
 height: 500px;
@@ -595,6 +670,7 @@ margin-top: 2px;
   margin: 2.3em 1.8em;
   color: white;
 
+
 }
 .ipocontent{
   margin-left: 10em;
@@ -604,18 +680,11 @@ margin-top: 2px;
   font-size: 1.2em;
   font-weight: 700;
 
+
 }
 .ipodetails{
   font-size: 1.1em;
   margin:0em 0.1em;
-  
+ 
 }
-@media (max-width: 380px) {
-  video{
-    width: 100%;
-  }
 
-  html{
-    overflow-x: hidden;
-  }
-}
