@@ -59,6 +59,14 @@ ul{
     }
   }
 
+ .newscontent {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+
   .google{
     &:hover{
       background: #dd4b39;
@@ -513,13 +521,7 @@ body{
   background-color: #ff0000c7;
   z-index: 1;
 }
-.breakingnews span{
-  display: inline-block;
-  margin: 0.1em 0.5em ;
-  padding: 0.1em 0.1em;
-  font-size: 1.4em;
-  font-weight: 700;
-}
+
 .newscontent{
   background-color:white ;
   height: 3rem;
@@ -527,6 +529,7 @@ body{
 }
 .marquee {
   padding-right: 20px;
+  width :90%;
   margin: -36px;
   white-space: nowrap;
   overflow: hidden;
@@ -606,4 +609,13 @@ margin-top: 2px;
   font-size: 1.1em;
   margin:0em 0.1em;
   
+}
+@media (max-width: 380px) {
+  video{
+    width: 100%;
+  }
+
+  html{
+    overflow-x: hidden;
+  }
 }
